@@ -21,19 +21,6 @@ export async function fetchQuest({ params }) {
     return data;
 }
 
-// export async function sendOrder(data) {
-//     console.log('ORDER after', data);
-//     const response = await fetch('http://localhost:3001/orders', {
-//         method: 'POST',
-//         body: JSON.stringify(data),
-//         headers: { 'Content-Type': 'application/json' },
-//     });
-//     const result = await response.json();
-//     console.log(result);
-//     // return redirect(`/quests/${params.questId}`);
-// }
-
-
 export function convertQuestLevel(questLevel) {
     let level = "";
     switch (questLevel) {
